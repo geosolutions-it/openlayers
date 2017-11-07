@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>OpenLayers SLD based selection control</title>
+    <title>OpenLayers 2 SLD based selection control</title>
     <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <style type="text/css">
@@ -28,7 +28,7 @@
         function init(){
             OpenLayers.ProxyHost= "proxy.cgi?url=";
             map = new OpenLayers.Map('map', {allOverlays: true, controls: []});
-            var url = "http://demo.opengeo.org/geoserver/wms";
+            var url = "http://demo.boundlessgeo.com/geoserver/wms";
             layers = {
                 states: new OpenLayers.Layer.WMS("State boundary", url,
                     {layers: 'topp:tasmania_state_boundaries', format: 'image/gif', transparent: 'TRUE'},

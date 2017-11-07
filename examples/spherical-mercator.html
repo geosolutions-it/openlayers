@@ -31,7 +31,7 @@
     <script src="../lib/OpenLayers.js"></script>
   </head>
   <body>
-    <h1 id="title">OpenLayers Spherical Mercator Example</h1>
+    <h1 id="title">OpenLayers 2 Spherical Mercator Example</h1>
 
     <div id="tags">
         spherical, mercator, osm, xyz, google, virtual earth, tile
@@ -54,7 +54,9 @@
         div: "map",
         projection: "EPSG:900913",
         displayProjection: "EPSG:4326",
-        numZoomLevels: 18
+        numZoomLevels: 18,
+        // approximately match Google's zoom animation
+        zoomDuration: 10
     });
 
     // create Google Mercator layers
